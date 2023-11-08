@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Roboto" ,sans-serif;
+  background-color: #f8f8f8;
+
+}
+
+/*El contenedor del encabezado*/
+.container{
+  max-width: 85%;
+  margin: auto;
+}
+
+/*Permite que los iconos se vayan a la izquierda*/
+.flexSB{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Modificaiones en los iconos*/
+.icon{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(255,255,255,0.3);
+  color: #3C847C;
+  transition: 0.5s;
+}
+
+/*Modificacion de los iconos al pasar el cursor encima*/
+.icon:hover{
+  cursor: pointer;
+  background-color: #3C847C;
+  color: #fff;
+}
+/* Quitar la decoración del menu es decir los . */
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none; 
+}
+
+button{
+  border: none;
+}
+
+.row{
+    width: 50%;
+}
+
+button{
+  padding: 17px 30px;
+  background-color: #fff;
+  color: #3C847C;
+  font-weight: 600;
+  border: none;
+  margin: 30px 20px 0 0;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 24px 36px -11px rgba(0 0 0 /9%);
+}
+
+button i{
+  margin-left: 20px;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+.primary-btn{
+  background-color: #3C847C;
+  color: #fff;
+}
+
+#heading{
+  text-align: center;
+  padding: 40px 0;
+}
+
+#heading h3{
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #3C847C;
+  text-transform: uppercase;
+}
+
+#heading h1{
+  font-size: 45px;
+  margin: 20px 0 ;
+  text-transform: capitalize;
+}
+
+p{
+  line-height: 30px;
+  font-size: 18px;
+}
+
+/* Estilos de about */
+.back{
+  background-image: url(./img/About1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 110vh;
+  padding-top: 25%;
+  padding-right: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.back h1{
+  font-size: 100px;
+  font-weight: 400;
+}
+
+.marigin{
+  margin-top: 40.3% ;
+}
+
+@media screen and (max-width:768px){
+  .back{
+      background-position: center;
+      padding-top: 50%;
+      height: 80vh;
+      
+  }
+  
+}

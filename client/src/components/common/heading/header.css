@@ -1,0 +1,105 @@
+/* El espacio de arriba y abajo del titulo Prowess MOOC y EDUACION EN LÍNEA ademas del color*/
+.head {
+    padding: 20px 0;
+    color: #fff;
+}
+/* Permite que el titulo prowess mooc y educación en línea se quede a lado de la imagen */
+.logo-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos de la imagen de prowess */
+.logo-image {
+    width: 85px; /* Ajusta el tamaño según tus necesidades */
+    height: 85px; /* Ajusta el tamaño según tus necesidades */
+    border-radius: 50%; /* Hace que la imagen tenga forma de círculo */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+/* El tamaño del titulo PROWESS MOOC */
+.logo h1{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+/* El espacio de la izquiera para Educación en línea */
+.logo span{
+    margin-left: 100px;
+}
+/* Espacio entre los íconos */
+.head .icon {
+    margin-left: 10px;
+}
+
+/*---------------Header---------------*/
+header{
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 30px;
+    position: relative;
+}
+
+header ul{
+    padding: 30px 20px;
+}
+
+header li{
+    margin-right: 40px;
+}
+
+header ul li a{
+    color: #000000;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+header ul li a:hover{
+    color: #3C847C;
+}
+
+.start{
+    background-color: #3C847C;
+    padding: 30px 70px;
+    color: #fff;
+    /*Modifica el rectangulo que esta en certificate*/
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/*Menu de hamburguesa*/
+.toggle{
+    display: none;
+}
+
+/* La parte responsive del código */
+
+@media screen and (max-width:768px) {
+    .start{
+        clip-path: none;
+    }
+    header{
+        margin: 0;
+        background-color: #3C847C;
+        position: relative;
+    }
+    header ul.flexSB{
+        display: none;
+    }
+    header ul li{
+        margin-bottom: 20px;
+    }
+    .toggle{
+        display: block;
+        background: none;
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        right: 50px;
+        top: -25px ;
+    }
+    .mobile-nav{
+        position: absolute;
+        top: 8vh; left: 0; width: 100%;
+        background-color: #3C847C;
+
+    }
+}
+
